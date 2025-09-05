@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PANEL DE PAGOS</title>
+</head>
+<body>
+    <header>
+        <h1>PANEL DE PAGOS</h1>
+    </header>
+    
+    <main>
+        <div class="grid">
+            <div class="card">
+                <h2>Claro Chile</h2>
+                <p>PAGO EXPRESS</p>
+                <button class="pago-btn" onclick="redirigir('https://sucursalvirtual.clarochile.cl/PagoExpress/index')">Pagar ahora</button>
+            </div>
+            
+            <!-- Espacio para futuras tarjetas de pago jeje -->
+            <div class="card add-new">
+                <h2>Agregar servicio</h2>
+                <p>Próximamente</p>
+                <button class="pago-btn disabled" disabled>Pagar ahora</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hecho con cariño por @neurot para mi papá</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
