@@ -51,6 +51,11 @@ h1{
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+.card.esval{
+    background: #e8f4fd;
+    border-top: 5px #3498db;
+}
+
 .card.add-new {
     background: #f9f9f9;
     border: 2px dashed #ddd;
@@ -63,7 +68,7 @@ h1{
 
 .card h2{
     margin: 0 0 15px 0;
-    color: #e12b27;
+    color: #292626;
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -95,6 +100,14 @@ h1{
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(225, 43, 39, 0.4);
 }
+
+.pago-btn.esval-btn{
+    background: #3498db;
+    box-shadow: 0 4px 8px rgba(52,152,219,0.4);
+}
+
+
+
 
 .pago-btn.disabled {
     background: #cccccc;
