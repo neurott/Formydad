@@ -7,7 +7,7 @@ html, body{
     background: #f8f9fa;
     color: #333;
 }
-
+/*
 header{
     width: 100%;
     background: linear-gradient(135deg, #e12b27 0%, #a31c1c 100%);
@@ -17,10 +17,10 @@ header{
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
-}
+}*/
 
 /* Asegurar que el header cubra completamente el área incluso con zoom */
-header::before {
+/*header::before {
     content: '';
     position: absolute;
     top: -10px;
@@ -29,7 +29,7 @@ header::before {
     bottom: -10px;
     background: linear-gradient(135deg, #e12b27 0%, #a31c1c 100%);
     z-index: -1;
-}
+}*/
 
 h1{
     margin: 0;
