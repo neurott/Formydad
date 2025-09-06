@@ -9,6 +9,7 @@ html, body{
 }
 
 header{
+    width: 100%;
     background: linear-gradient(135deg, #e12b27 0%, #a31c1c 100%);
     color: white;
     text-align: center;
@@ -20,6 +21,7 @@ h1{
     margin: 0;
     font-weight: 600;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
 .grid{
@@ -105,8 +107,30 @@ h1{
     box-shadow: 0 4px 8px rgba(52,152,219,0.4);
 }
 
+.card.pagado{
+    background: #e8f7e8;
+   
+}
 
+.card.pagado h2{
+    color: #292626;
+}
 
+.card.pagado .pago-btn{
+    background: #28a745;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.card.pagado .estado-pago select{
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.card.pagado.esval {
+    background: #e8f7e8;
+  
+}
 
 .pago-btn.disabled {
     background: #cccccc;

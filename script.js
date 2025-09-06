@@ -7,6 +7,14 @@ function actualizarEstado(servicio, estado) {
     // Guardar en localStorage
     localStorage.setItem('estado_' + servicio, estado);
     
+    // Actualizar la apariencia de la tarjeta
+    const card = document.querySelector(`select[onchange*="${servicio}"]`).closest('.card');
+    if (estado === 'pagado') {
+        card.classList.add('pagado');
+    } else {
+        card.classList.remove('pagado');
+    }
+    
     // Opcional: Mostrar un mensaje de confirmación
     console.log(servicio + ' marcado como ' + estado);
 }
@@ -21,10 +29,17 @@ function cargarEstados() {
         
         if (estadoGuardado && selector) {
             selector.value = estadoGuardado;
+            
+            // Actualizar la apariencia de la tarjeta según el estado guardado
+            const card = selector.closest('.card');
+            if (estadoGuardado === 'pagado') {
+                card.classList.add('pagado');
+            } else {
+                card.classList.remove('pagado');
+            }
         }
     });
 }
-
 // Cargar estados cuando la página se carga
 window.onload = function() {
     cargarEstados();
