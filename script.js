@@ -18,7 +18,7 @@ function actualizarEstado(servicio, estado) {
         boton.onclick = null; // Eliminar la acción de redirección
     } else {
         card.classList.remove('pagado');
-        boton.textContent = 'Pagar ahora';
+        boton.textContent = 'Realizar pago';
         boton.classList.remove('disabled');
         // Restaurar la acción de redirección
         boton.onclick = function() { redirigir(boton.dataset.url); };
@@ -50,7 +50,7 @@ function cargarEstados() {
                 boton.onclick = null;
             } else {
                 card.classList.remove('pagado');
-                boton.textContent = 'Pagar ahora';
+                boton.textContent = 'Realizar pago';
                 boton.classList.remove('disabled');
                 boton.onclick = function() { redirigir(boton.dataset.url); };
             }

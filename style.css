@@ -4,7 +4,7 @@ html, body{
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f8f9fa;
+    background: #1a1a2e;
     color: #333;
 }
 /*
@@ -49,7 +49,7 @@ h1{
 }
 
 .card{
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     padding: 30px;
@@ -181,7 +181,7 @@ main{
 footer{
     text-align: center;
     padding: 1.2rem;
-    background: #ffffff;
+    background: #bbadad;
     color: black;
     font-size: 0.9rem;
 }
