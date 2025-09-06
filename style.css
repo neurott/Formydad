@@ -119,6 +119,27 @@ h1{
     box-shadow: none;
 }
 
+.estado-pago {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.estado-pago select {
+    width: 80%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.estado-pago select:focus {
+    outline: none;
+    border-color: #e12b27;
+}
+
 main{
     flex: 1;
     display: flex;
