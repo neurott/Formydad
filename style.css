@@ -15,6 +15,20 @@ header{
     text-align: center;
     padding: 1.2rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Asegurar que el header cubra completamente el área incluso con zoom */
+header::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, #e12b27 0%, #a31c1c 100%);
+    z-index: -1;
 }
 
 h1{
@@ -46,6 +60,7 @@ h1{
     align-items: center;
     justify-content: center;
     min-height: 250px;
+    border-left: 5px solid transparent;
 }
 
 .card:hover{
@@ -57,16 +72,6 @@ h1{
     background: #e8f4fd;
 }
 
-/*.card.add-new {
-    background: #f9f9f9;
-    border: 2px dashed #ddd;
-}
-
-.card.add-new:hover {
-    background: #f0f0f0;
-    transform: none;
-}
-*/
 .card h2{
     margin: 0 0 15px 0;
     color: #292626;
@@ -107,17 +112,30 @@ h1{
     box-shadow: 0 4px 8px rgba(52,152,219,0.4);
 }
 
+.pago-btn.esval-btn:hover {
+    background: #2980b9;
+    box-shadow: 0 6px 12px rgba(52,152,219,0.5);
+}
+
+/* Estilos para cuando está pagado */
 .card.pagado{
     background: #e8f7e8;
-   
+    
 }
 
 .card.pagado h2{
-    color: #292626;
+    color: #1e7e34;
 }
 
-.card.pagado .pago-btn{
+.card.pagado .pago-btn {
     background: #28a745;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+    cursor: default;
+}
+
+.card.pagado .pago-btn:hover {
+    background: #28a745;
+    transform: none;
     box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
 }
 
@@ -129,18 +147,7 @@ h1{
 
 .card.pagado.esval {
     background: #e8f7e8;
-  
-}
-
-.pago-btn.disabled {
-    background: #cccccc;
-    cursor: not-allowed;
-    box-shadow: none;
-}
-
-.pago-btn.disabled:hover {
-    transform: none;
-    box-shadow: none;
+    
 }
 
 .estado-pago {
@@ -189,5 +196,9 @@ footer{
     .card {
         min-height: 220px;
         padding: 20px;
+    }
+    
+    header {
+        padding: 1rem;
     }
 }
