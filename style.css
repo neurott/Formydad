@@ -63,7 +63,7 @@ h1{
 
 
 .pago-btn {
-    background: #e12b27;
+    background: #9f1d99;
     color: white;
     border: none;
     padding: 12px 30px;
@@ -83,7 +83,7 @@ h1{
 }
 
 .pago-btn:hover {
-    background: #c22521;
+    background: #4056e7;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(225, 43, 39, 0.4);
 }
