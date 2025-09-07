@@ -8,13 +8,6 @@ html, body{
     color: #333;
 }
 
-h1{
-    margin: 0;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
