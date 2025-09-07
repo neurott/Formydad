@@ -140,6 +140,9 @@ h1{
     font-size: 0.9rem;
     background-color: #f8f9fa;
     cursor: pointer;
+
+    appearance: none;
+    box-sizing: border-box;
 }
 
 .estado-pago select:focus {
