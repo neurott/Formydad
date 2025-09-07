@@ -83,20 +83,11 @@ h1{
 }
 
 .pago-btn:hover {
-    background: #4056e7;
+    background: #4f63e5;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(225, 43, 39, 0.4);
 }
 
-.pago-btn.esval-btn{
-    background: #3498db;
-    box-shadow: 0 4px 8px rgba(52,152,219,0.4);
-}
-
-.pago-btn.esval-btn:hover {
-    background: #2980b9;
-    box-shadow: 0 6px 12px rgba(52,152,219,0.5);
-}
 /* Estilos para cuando está pagado */
 .card.pagado{
     background: #e8f7e8;
