@@ -4,7 +4,7 @@ html, body{
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #152052;
+    background: #121212;
     color: #333;
 }
 
@@ -148,8 +148,8 @@ main{
 footer{
     text-align: center;
     padding: 1.2rem;
-    background: #152052;
-    color: white;
+    background: #121212;
+    color: #e0e0e0;
     font-size: 0.9rem;
 }
 /* Responsive */
