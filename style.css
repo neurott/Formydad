@@ -105,6 +105,7 @@ h1{
 
 .card.pagado h2{
     color: #1e7e34;
+    
 }
 
 .card.pagado .pago-btn {
@@ -133,13 +134,14 @@ h1{
 
 .estado-pago select {
     width: 80%;
-    padding: 8px;
+    padding:8px;
     border-radius: 20px;
     border: 1px solid #ddd;
     text-align: center;
     font-size: 0.9rem;
     background-color: #f8f9fa;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 .estado-pago select:focus {
