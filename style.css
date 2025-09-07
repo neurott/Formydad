@@ -4,32 +4,9 @@ html, body{
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #1a1a2e;
+    background: #152052;
     color: #333;
 }
-/*
-header{
-    width: 100%;
-    background: linear-gradient(135deg, #e12b27 0%, #a31c1c 100%);
-    color: white;
-    text-align: center;
-    padding: 1.2rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: relative;
-    overflow: hidden;
-}*/
-
-/* Asegurar que el header cubra completamente el área incluso con zoom */
-/*header::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: linear-gradient(135deg, #e12b27 0%, #a31c1c 100%);
-    z-index: -1;
-}*/
 
 h1{
     margin: 0;
@@ -66,10 +43,6 @@ h1{
 .card:hover{
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-.card.esval{
-    background: #e8f4fd;
 }
 
 .card h2{
@@ -116,7 +89,6 @@ h1{
     background: #2980b9;
     box-shadow: 0 6px 12px rgba(52,152,219,0.5);
 }
-
 /* Estilos para cuando está pagado */
 .card.pagado{
     background: #e8f7e8;
@@ -143,11 +115,6 @@ h1{
     background-color: #d4edda;
     color: #155724;
     border-color: #c3e6cb;
-}
-
-.card.pagado.esval {
-    background: #e8f7e8;
-    
 }
 
 .estado-pago {
@@ -181,11 +148,10 @@ main{
 footer{
     text-align: center;
     padding: 1.2rem;
-    background: #bbadad;
-    color: black;
+    background: #152052;
+    color: white;
     font-size: 0.9rem;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
     .grid {

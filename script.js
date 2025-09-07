@@ -30,7 +30,7 @@ function actualizarEstado(servicio, estado) {
 
 // Función para cargar los estados guardados al cargar la página
 function cargarEstados() {
-    const servicios = ['claro', 'chilquinta', 'esval', 'agua', 'mundo', 'entel', 'movistar'];
+    const servicios = ['claro', 'chilquinta', 'esval', 'agua', 'mundo', 'entel', 'movistar', 'wom'];
     
     servicios.forEach(servicio => {
         const estadoGuardado = localStorage.getItem('estado_' + servicio);
