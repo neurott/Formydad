@@ -13,15 +13,10 @@ function actualizarEstado(servicio, estado) {
     
     if (estado === 'pagado') {
         card.classList.add('pagado');
-        boton.textContent = 'Pagado';
-        boton.classList.add('disabled');
-        boton.onclick = null; // Eliminar la acción de redirección
+        boton.style.display = 'none'; // Ocultar el botón
     } else {
         card.classList.remove('pagado');
-        boton.textContent = 'Pagar ahora';
-        boton.classList.remove('disabled');
-        // Restaurar la acción de redirección
-        boton.onclick = function() { redirigir(boton.dataset.url); };
+        boton.style.display = 'block'; // Mostrar el botón
     }
     
     // Opcional: Mostrar un mensaje de confirmación
@@ -45,14 +40,10 @@ function cargarEstados() {
             
             if (estadoGuardado === 'pagado') {
                 card.classList.add('pagado');
-                boton.textContent = 'Pagado';
-                boton.classList.add('disabled');
-                boton.onclick = null;
+                boton.style.display = 'none'; // Ocultar el botón
             } else {
                 card.classList.remove('pagado');
-                boton.textContent = 'Pagar ahora';
-                boton.classList.remove('disabled');
-                boton.onclick = function() { redirigir(boton.dataset.url); };
+                boton.style.display = 'block'; // Mostrar el botón
             }
         }
     });
