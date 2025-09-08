@@ -65,7 +65,7 @@ html, body{
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 8px rgba(225, 43, 39, 0.3);
+    box-shadow: 0 4px 8px rgba(191, 39, 225, 0.3);
     width: 80%;
     max-width: 200px;
 
@@ -78,12 +78,12 @@ html, body{
 .pago-btn:hover {
     background: #4f63e5;
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(225, 43, 39, 0.4);
+    box-shadow: 0 6px 12px rgba(162, 61, 151, 0.4);
 }
 
 /* Estilos para cuando está pagado */
 .card.pagado{
-    background: #e8f7e8;
+    background: #d0ffd0;
     
 }
 
@@ -101,7 +101,7 @@ html, body{
 .card.pagado .pago-btn:hover {
     background: #28a745;
     transform: none;
-    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
 .card.pagado .estado-pago select{
@@ -132,7 +132,7 @@ html, body{
 
 .estado-pago select:focus {
     outline: none;
-    border-color: #e12b27;
+    border-color: #1d1b1b;
 }
 
 main{

@@ -18,9 +18,7 @@ function actualizarEstado(servicio, estado) {
         card.classList.remove('pagado');
         boton.style.display = 'block'; // Mostrar el botón
     }
-    
-    // Opcional: Mostrar un mensaje de confirmación
-    console.log(servicio + ' marcado como ' + estado);
+
 }
 
 // Función para cargar los estados guardados al cargar la página
