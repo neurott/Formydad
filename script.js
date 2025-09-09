@@ -106,11 +106,8 @@ function mostrarHistorial() {
             'claro': 'Claro Chile',
             'chilquinta': 'Chilquinta',
             'esval': 'Esval',
-            'agua': 'Los Maitenes',
-            'mundo': 'Mundo Pacífico',
             'entel': 'Entel',
             'movistar': 'Movistar',
-            'wom': 'Wom'
         };
         
         const nombreServicio = nombresServicios[item.servicio] || item.servicio;
