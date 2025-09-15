@@ -81,7 +81,6 @@ html, body{
     box-shadow: 0 6px 12px rgba(162, 61, 151, 0.4);
 }
 
-/* Estilos para cuando está pagado */
 .card.pagado{
     background: #d0ffd0;
     
@@ -125,7 +124,6 @@ html, body{
     font-size: 0.9rem;
     background-color: #f8f9fa;
     cursor: pointer;
-
     appearance: none;
     box-sizing: border-box;
 }
@@ -149,7 +147,7 @@ footer{
     color: #e0e0e0;
     font-size: 0.9rem;
 }
-/* Estilos para el historial de pagos */
+
 .btn-flotante {
     position: fixed;
     bottom: 80px;
@@ -174,7 +172,6 @@ footer{
     transform: scale(1.1);
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
